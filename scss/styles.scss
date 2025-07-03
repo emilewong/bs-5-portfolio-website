@@ -1,3 +1,4 @@
+/* Header styling with background image and overlay */
 .header {
     background: #151515 url('../images/intro-bg.jpg') no-repeat center center;
     background-size: cover;
@@ -26,10 +27,12 @@
     bottom: 50px;
 }
 
+/* About section profile image styling */
 .about-img {
     width: 200px;
 }
 
+/* Statistics section styling */
 .stats .stat {
     border-right: 0 !important;
     margin-bottom: 40px;
@@ -37,12 +40,14 @@
     padding-bottom: 20px;
 }
 
+/* Project card hover effect */
 .project:hover {
     transform: scale(1.05);
     transition: all 0.5 ease-in-out;
     opacity: 0.9;
 }
 
+/* Responsive adjustments for mobile devices */
 @media(max-width:767px){
     .header .social i {
         font-size: 30px;

@@ -1,43 +1,98 @@
-# Portfolio Website
+# Emile Wong's Portfolio Website
 
-This is a dark-light contrast website for a portfolio. It is related to being a web developer, but can be edited to be for any type of portfolio. It includes a bit of custom JavaScript for the typewriter effect and uses a script called "Lightbox" for the project modals.
+A professional portfolio website showcasing web development projects and skills, built with Bootstrap 5 and Sass.
 
-<img src="./images/screen.png" />
+<img src="./images/screen.png" alt="Portfolio Website Screenshot" />
 
 ## Features
 
-- Dark and light contrast
-- Responsive design
-- Full height header/hero
-- Background image overlays
-- Typewriter effect in header
-- Lightbox modals for projects
-- Progress bar stats
-- Font awesome icons
+- Modern, responsive design with dark/light contrast
+- Full-height hero section with typewriter effect
+- About section with profile information
+- Skills展示与进度条可视化
+- Project gallery with Lightbox modals
+- Font Awesome icons integration
+- Customizable Sass variables
+- Mobile-friendly navigation
 
-## Usage
+## Technologies Used
 
-This website is built with [Bootstrap](https://getbootstrap.com/) and [Sass](https://sass-lang.com/). It uses [Font Awesome](https://fontawesome.com/) for icons.
+- HTML5
+- CSS3/Sass
+- JavaScript
+- Bootstrap 5
+- Font Awesome
+- Lightbox.js
 
-In order to customize this website, you need to install [Node.js](https://nodejs.org/en/). Then, clone this repository and run:
+## Getting Started
 
+### Prerequisites
+- [Node.js](https://nodejs.org/en/) (v14 or higher)
+- npm (usually comes with Node.js)
+
+### Installation
+
+1. Clone this repository
+```bash
+git clone https://github.com/yourusername/portfolio-website.git
+cd portfolio-website
+```
+
+2. Install dependencies
 ```bash
 npm install
 ```
 
-This will install Bootstrap, Sass and Font Awesome. To build your CSS files from Sass, run:
-
+3. Build CSS from Sass
 ```bash
 npm run sass:build
 ```
 
-To watch your Sass files for changes, run:
-
+4. Run development server with Sass watch
 ```bash
 npm run sass:watch
 ```
 
-You can add Bootstrap variables to the `bootstrap.scss` file. You can look at the file `node_modules/bootstrap/dist/scss/_variables.scss` for a list of all the variables. Do NOT edit the `variables.scss` file directly, as it will be overwritten when you update Bootstrap.
+5. Open `index.html` in your browser
 
-To add your own custom styles, use the `styles.scss` file.
-# bs-5-portfolio-website
+## Customization
+
+### Changing Colors
+Modify the color variables in <mcfile name="bootstrap.scss" path="scss/bootstrap.scss"></mcfile>:
+```scss
+// Colors series 1
+$primary: #cc005f;
+$secondary: #990047;
+$dark:#000;
+$light: #f4f4f4;
+```
+
+### Adding Projects
+1. Add project images to the <mcfolder name="images" path="images/"></mcfolder> directory
+2. Update the project section in <mcfile name="index.html" path="index.html"></mcfile>
+
+### Updating Personal Information
+Edit the following sections in <mcfile name="index.html" path="index.html"></mcfile>:
+- Header section (name and title)
+- About section
+- Profile information
+- Contact details
+
+## Deployment
+
+To deploy this website to GitHub Pages:
+
+1. Create a `gh-pages` branch
+2. Push all files to the branch
+3. In your repository settings, set GitHub Pages source to the `gh-pages` branch
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Bootstrap 5 documentation
+- Font Awesome icons
+- Lightbox.js library
+- Traversy Media for initial template inspiration
